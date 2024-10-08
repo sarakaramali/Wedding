@@ -1,0 +1,500 @@
+@font-face {
+    font-family: 'iransans';
+    src: url('../fonts/iransans/eot/IRANSansWeb.eot?#'),
+    url('../fonts/iransans/woff/IRANSansWeb.woff') format('woff'),
+    url('../fonts/iransans/ttf/IRANSansWeb.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'iranyekan';
+    src: url('../fonts/iranyekan/eot/iranyekanwebregular.eot?#'),
+    url('../fonts/iranyekan/woff/iranyekanwebregular.woff') format('woff'),
+    url('../fonts/iranyekan/ttf/iranyekanwebregular.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'iranyekan_numbers';
+    src: url('../fonts/iranyekan_numbers/eot/iranyekanwebregular(fanum).eot?#'),
+    url('../fonts/iranyekan_numbers/woff/iranyekanwebregular(fanum).woff') format('woff'),
+    url('../fonts/iranyekan_numbers/ttf/iranyekanwebregular(fanum).ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'fontawsome';
+    src: url('../fonts/font-awsome/fa-solid-900.eot?#'),
+    url('../fonts/font-awsome/fa-solid-900.woff') format('woff'),
+    url('../fonts/font-awsome/fa-solid-900.ttf') format('truetype')
+}
+
+.fa,
+.fas {
+    font-family: 'fontawsome';
+    font-weight: 900;
+}
+
+body {
+    /*font-family: iranyekan, iranyekan_numbers;*/
+    font-family: Calibri;
+}
+
+/*برای اسکرول صفحه با بوت استرپ این نیاز است*/
+:root {
+    scroll-behavior: auto;
+    --main-color: #881228;
+}
+
+/*header*/
+
+.top-header {
+    width: 100%;
+    position: fixed;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+    background: #fff;
+    z-index: 20;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: black;
+}
+
+.navbar ul li a {
+    font-size: 18px;
+}
+
+.navbar ul li:hover, .navbar ul li a.active, .navbar ul li a:focus {
+    /*background-color: var(--main-color);*/
+    color: white !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+    color: rgb(252 252 252 / 90%);
+    background-color: var(--main-color);
+}
+
+/*.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {*/
+/*    color: rgb(252 252 252 / 90%);*/
+/*    background-color: #881228;*/
+/*}*/
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+
+/*slider*/
+.carousel-inner .bx-wrapper {
+    margin-bottom: 0;
+}
+
+.carousel-inner ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+}
+
+.carousel-inner ul li a:link, .carousel-inner ul li a:visited {
+    /*background-color: #d1d1d1;*/
+    display: block;
+    /*padding: 10px;*/
+    /*margin-left: 5px;*/
+    text-align: center;
+    text-decoration: none;
+    font-family: 'iranyekan_numbers', 'iranyekan';
+    color: #4a4a4a;
+    border-radius: 10px;
+}
+
+.details-slider {
+    border: 1px solid red;
+    position: absolute;
+    top: 80px;
+}
+
+.details-slider h1 {
+    font-size: 48px;
+}
+
+.details-slider h2 {
+    font-size: 40px;
+    font-family: 'Engagement', cursive;
+}
+
+.countdown {
+    background-image: url("../images/ptn-bg.jpg");
+    min-height: 320px;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+}
+
+#timer h3 {
+    background-color: var(--main-color);
+    padding: 20px 30px;
+    text-align: center;
+    font-family: 'Engagement', cursive;
+}
+
+#timer #days {
+    border: 1px solid green;
+    position: absolute;
+    /*width: 120px;*/
+    top: 73px;
+    left: 0;
+    min-height: 50px;
+    padding: 20px 40px;
+
+}
+
+#timer #hours {
+    border: 1px solid green;
+    position: absolute;
+    /*width: 120px;*/
+    top: 73px;
+    right: 0;
+    min-height: 50px;
+    padding: 20px 40px;
+}
+
+#timer #minutes {
+    border: 1px solid green;
+    position: absolute;
+    /*width: 120px;*/
+    bottom: 0;
+    left: 128px;
+    min-height: 50px;
+    padding: 20px 40px;
+}
+
+#timer #seconds {
+    border: 1px solid green;
+    position: absolute;
+    /*width: 120px;*/
+    bottom: 0;
+    right: 128px;
+    min-height: 50px;
+    padding: 20px 40px;
+}
+
+#timer h6 {
+    color: var(--main-color);
+}
+
+/*#carouselExampleIndicators{*/
+/*    position: relative;*/
+/*}*/
+
+/*.flipdown{*/
+/*    margin: 0 auto;*/
+/*}*/
+
+/*about-us*/
+#about_us {
+    background-image: url("../images/ptn-bg.jpg");
+}
+
+.section-title {
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 10px;
+}
+
+.section-title h1 {
+    font-family: 'Engagement', cursive;
+}
+
+.section-title h1 strong {
+    color: var(--main-color);
+    text-decoration: underline;
+    font-family: 'Engagement', cursive;
+}
+
+.section-title h2 {
+    font-family: 'Engagement', cursive;
+    font-weight: bold;
+}
+
+.section-title p {
+    font-size: 25px;
+}
+
+.card {
+    background-color: var(--main-color);
+}
+
+.card-body svg {
+    border-radius: 50%;
+    text-align: center;
+    color: gray;
+}
+
+/*.card-img, .card-img-bottom, .card-img-top {*/
+.card-img-top {
+    width: 100%;
+    padding: 30px;
+    border-radius: 36px;
+}
+
+strong {
+    color: var(--main-color);
+    text-decoration: underline;
+    font-family: 'Engagement', cursive;
+}
+
+/*Our_Story*/
+#Our_Story {
+    /*border: 1px solid red;*/
+    min-height: 250px;
+}
+
+/*family*/
+
+#Family {
+    /*border: 1px solid red;*/
+    background-image: url("../images/ptn-bg.jpg");
+}
+
+
+#Family p {
+    color: #525252
+}
+
+.item {
+    /*border: 1px solid green;*/
+    /*background-color: white;*/
+    padding: 10px;
+    /*width: 400px;*/
+    margin-bottom: 20px;
+    /*float: left;*/
+    position: relative;
+}
+
+.family-person {
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    border: 10px solid #fff;
+}
+
+#Family .item .family-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    right: 40px;
+    background-color: var(--main-color);
+    padding: 20px 10px;
+    opacity: 0;
+    width: auto;
+    /*visibility: hidden;*/
+}
+
+#Family .item:hover .family-overlay {
+    /*visibility: visible;*/
+    bottom: 0;
+    opacity: 1;
+    transition: bottom 400ms;
+}
+
+#Family .item .family-overlay h4 {
+    color: white;
+    font-family: 'Engagement', cursive;
+}
+
+#Family .item .family-overlay p {
+    color: white;
+
+}
+
+/*Gallery*/
+/*funcy_box*/
+/*.gallery-img{*/
+/*    position: relative;*/
+/*}*/
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(1, 59, 28, 0.82);
+    width: auto;
+    opacity: 0;
+}
+
+/*.gallery-overlay i{*/
+/*    display: inline;*/
+/*    line-height: 8;*/
+/*    color: white;*/
+/*    background-color: #881228;*/
+/*    text-align: center;*/
+/*    padding: 0 5px;*/
+/* }*/
+#Gallery .item:hover .gallery-overlay {
+    opacity: 1;
+    bottom: 400px;
+    transition: bottom 1.5s;
+    overflow: hidden;
+}
+
+#Gallery .item:hover {
+    border: 10px solid var(--main-color);
+    padding: 0;
+}
+
+/*Wedding*/
+
+#Wedding {
+    background-image: url("../images/ptn-bg.jpg");
+}
+
+#Wedding .card {
+    border-top: 3px solid var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+    border-radius: 0;
+}
+
+#Wedding .card:before {
+    content: "";
+    border-top: 0 solid var(--main-color);
+    border-right: 0 solid transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+
+#Wedding .card:hover:before {
+    border-top-width: 78px;
+    border-right-width: 78px;
+}
+
+#Wedding .card:after {
+    content: "";
+    border-bottom: 0 solid var(--main-color);var(--main-color);der-left: 0 solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+
+#Wedding .card:hover:after {
+    border-bottom-width: 78px;
+    border-left-width: 78px;
+}
+
+#Wedding .holder-icon-wedding i {
+    text-align: center;
+    border: 1px solid var(--main-color);
+    font-size: 80px;
+    background-color: white;
+    color: var(--main-color);
+}
+
+#Wedding .card-title {
+    color: var(--main-color);
+    font-weight: bolder;
+    padding-bottom: 12px;
+    letter-spacing: 0;
+}
+
+#Wedding .card:hover .card-title {
+    letter-spacing: 3px;
+    transition: letter-spacing 0.3s ease 0s
+}
+
+/*Events*/
+
+.img-event {
+    overflow: hidden;
+}
+
+#Events .card-img-top {
+    /*width: 100%;*/
+    padding: 10px;
+    border-radius: 0;
+
+}
+
+#Events .card:hover .card-img-top {
+    transform: scale(1.5) rotate(-10deg);
+    transition: transform 1s;
+    padding: 10px;
+}
+
+#Events .card a {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    color: white;
+    border-radius: 0;
+    box-shadow: none
+
+}
+
+#Events .card a:hover {
+    background-color: #626060;
+    border-color: #626060;
+    outline: #626060;
+    box-shadow: none
+}
+
+/*Contact us*/
+#Contact_Us {
+    /*border: 1px solid red;*/
+    min-height: 250px;
+}
+
+#Contact_Us .form-control, .form-select {
+    background-color: var(--main-color);
+    outline: none;
+    border: 0;
+    box-shadow: none;
+    color: white;
+    padding: 15px 10px;
+    font-size: 20px;
+}
+
+#Contact_Us .btn {
+    background-color: var(--main-color);
+    outline: none;
+    border: 0;
+    box-shadow: none;
+    color: white;
+    padding: 10px 25px;
+    font-size: 20px;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
+#Contact_Us .btn:hover {
+    background-color: #626060;
+    border-color: #626060;
+    outline: #626060;
+}
+
+/*footer*/
+#Footer {
+    /*border: 1px solid red;*/
+    min-height: 100px;
+    background-color: #3f3e3e;
+    margin-top: 20px;
+}
+
+.copy-right {
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.copy-right a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.copy-right a:hover {
+    text-decoration: none;
+    color: #07a989;
+}
